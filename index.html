@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bookshelf App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <div class="header">
+        <div class="header-content">
+            <h1>BookShelf <span>APP</span><sup>.id</sup></h1>
+        </div>
+    </div>
+    <div class="tw-relative"><img src="images/IMG-20191130-WA0007.jpg" width="80" height="80" alt="Yusup" class="tw-rounded-full"">
+    	<h1><i class="fi-rr-user"></i> Yusup Setiawan</h1>
+    	<p class="col-11"><i class="fi-rr-folder"></i> Pelatihan Programer Dasar-dasar Front-end</p>
+    	<p class="col-12"><i class="fi-rr-school"></i> UIN Sunan Gunung Djati Bandung</p>
+    	<p class="col-13"><i class="fi-rr-document"></i> Pendidikan Fisika</p>
+     </div>
+     <div class="col-22">
+     	<p>Jumlah Buku Anda</p>
+            <h4 id="jumlahBuku">0</h4>
+     </div>
+
+    <div class="col-31">
+        <div class="col-32">
+            <div class="col-322">
+                <div class="unread-icon">
+                    <i class="fi-rr-bookmark"></i>
+                </div>
+                <h5>Belum Dibaca</h5>
+            </div>
+            <div class="col-322">
+                <div class="add-icon" id="add-icon">
+                    <i class="fi-sr-add"></i>
+                </div>
+                <h5>Tambah Data</h5>
+            </div>
+            <div class="col-322">
+                <div class="read-icon">
+                    <i class="fi-rr-book-alt"></i>
+                </div>
+                <h5>Sudah Dibaca</h5>
+            </div>
+        </div>
+    </div>
+<section class="main-1" id="cari">
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="belumbaca" class="belumbaca">
+            
+        </div>
+    </section>
+
+    <section class="main-2" id="cari">
+        <h2>Selesai dibaca</h2>
+
+        <div id="sudahbaca" class="sudahbaca">
+           
+        </div>
+    </section>
+    <div id="col-333">
+        <section>
+            <h2>Tambah Data Buku</h2><br>
+            <form id="form" autocomplete="off">
+                <div class="input-group">
+                    <h5>Judul Buku</h5>
+                    <input type="text" id="title" class="input-form" maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <h5>Author</h5>
+                    <input type="text" id="author" class="input-form" maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+                </div>
+                <div class="input-group">
+                    <input type="date" id="year" class="input-form" min="1900" max="2026" />
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="save">Simpan</button>
+                    <button type="reset" class="close" id="close">Tutup</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+     <script src="js/Data.js"></script>
+     <script src="js/Script.js"></script>
+      <script src="js/JumBuk.js"></script>
+
+</body>
+
+</html>
